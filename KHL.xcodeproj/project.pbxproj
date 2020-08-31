@@ -3,27 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55AA368524FBD3B200B88670 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368424FBD3B200B88670 /* Team.swift */; };
+		55AA368724FBD49500B88670 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368624FBD49500B88670 /* NetworkManager.swift */; };
+		55AA368E24FBDD8F00B88670 /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368D24FBDD8F00B88670 /* TeamCollectionViewCell.swift */; };
+		55AA369024FCD9EC00B88670 /* Extension + TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368F24FCD9EC00B88670 /* Extension + TeamsVC.swift */; };
+		55AA369224FCDFD500B88670 /* TeamDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA369124FCDFD500B88670 /* TeamDetail.swift */; };
 		55C8432524FBBB8B003B448A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8432424FBBB8B003B448A /* AppDelegate.swift */; };
 		55C8432724FBBB8B003B448A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8432624FBBB8B003B448A /* SceneDelegate.swift */; };
-		55C8432924FBBB8B003B448A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8432824FBBB8B003B448A /* ViewController.swift */; };
-		55C8432C24FBBB8B003B448A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C8432A24FBBB8B003B448A /* Main.storyboard */; };
+		55C8432924FBBB8B003B448A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8432824FBBB8B003B448A /* LoginViewController.swift */; };
+		55C8432C24FBBB8B003B448A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C8432A24FBBB8B003B448A /* Login.storyboard */; };
 		55C8432E24FBBB8F003B448A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C8432D24FBBB8F003B448A /* Assets.xcassets */; };
 		55C8433124FBBB8F003B448A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55C8432F24FBBB8F003B448A /* LaunchScreen.storyboard */; };
+		55C8433C24FBCD26003B448A /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C8433B24FBCD26003B448A /* TeamsViewController.swift */; };
+		FDBAABF4842B415F752F9D55 /* Pods_KHL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963F21D2DBDC2E4D3CF11275 /* Pods_KHL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55AA368424FBD3B200B88670 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		55AA368624FBD49500B88670 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		55AA368D24FBDD8F00B88670 /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		55AA368F24FCD9EC00B88670 /* Extension + TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + TeamsVC.swift"; sourceTree = "<group>"; };
+		55AA369124FCDFD500B88670 /* TeamDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetail.swift; sourceTree = "<group>"; };
 		55C8432124FBBB8B003B448A /* KHL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KHL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C8432424FBBB8B003B448A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55C8432624FBBB8B003B448A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55C8432824FBBB8B003B448A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55C8432B24FBBB8B003B448A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55C8432824FBBB8B003B448A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		55C8432B24FBBB8B003B448A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		55C8432D24FBBB8F003B448A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55C8433024FBBB8F003B448A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55C8433224FBBB8F003B448A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C8433B24FBCD26003B448A /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
+		9266D97E2169005EC08159DC /* Pods-KHL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHL.debug.xcconfig"; path = "Target Support Files/Pods-KHL/Pods-KHL.debug.xcconfig"; sourceTree = "<group>"; };
+		963F21D2DBDC2E4D3CF11275 /* Pods_KHL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KHL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2CADD25191B8841F9D7A2AB /* Pods-KHL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KHL.release.xcconfig"; path = "Target Support Files/Pods-KHL/Pods-KHL.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBAABF4842B415F752F9D55 /* Pods_KHL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6B854D574628EB168A7248 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9266D97E2169005EC08159DC /* Pods-KHL.debug.xcconfig */,
+				C2CADD25191B8841F9D7A2AB /* Pods-KHL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		55AA368824FBD49A00B88670 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55AA368624FBD49500B88670 /* NetworkManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		55AA368924FBD4A100B88670 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55AA368424FBD3B200B88670 /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55AA368C24FBDA2E00B88670 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55AA368D24FBDD8F00B88670 /* TeamCollectionViewCell.swift */,
+				55AA369124FCDFD500B88670 /* TeamDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		55C8431824FBBB8B003B448A = {
 			isa = PBXGroup;
 			children = (
 				55C8432324FBBB8B003B448A /* KHL */,
 				55C8432224FBBB8B003B448A /* Products */,
+				4E6B854D574628EB168A7248 /* Pods */,
+				8625027C99704EB3744CBE13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +109,52 @@
 		55C8432324FBBB8B003B448A /* KHL */ = {
 			isa = PBXGroup;
 			children = (
-				55C8432424FBBB8B003B448A /* AppDelegate.swift */,
-				55C8432624FBBB8B003B448A /* SceneDelegate.swift */,
-				55C8432824FBBB8B003B448A /* ViewController.swift */,
-				55C8432A24FBBB8B003B448A /* Main.storyboard */,
+				55AA368924FBD4A100B88670 /* Models */,
+				55AA368C24FBDA2E00B88670 /* Views */,
+				55C8433924FBBEB5003B448A /* Controllers */,
+				55C8433A24FBBEBD003B448A /* Storyboards */,
+				55AA368824FBD49A00B88670 /* Helpers */,
+				55C8433824FBBEA9003B448A /* Support */,
 				55C8432D24FBBB8F003B448A /* Assets.xcassets */,
-				55C8432F24FBBB8F003B448A /* LaunchScreen.storyboard */,
 				55C8433224FBBB8F003B448A /* Info.plist */,
 			);
 			path = KHL;
+			sourceTree = "<group>";
+		};
+		55C8433824FBBEA9003B448A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				55C8432424FBBB8B003B448A /* AppDelegate.swift */,
+				55C8432624FBBB8B003B448A /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		55C8433924FBBEB5003B448A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				55C8432824FBBB8B003B448A /* LoginViewController.swift */,
+				55C8433B24FBCD26003B448A /* TeamsViewController.swift */,
+				55AA368F24FCD9EC00B88670 /* Extension + TeamsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		55C8433A24FBBEBD003B448A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				55C8432A24FBBB8B003B448A /* Login.storyboard */,
+				55C8432F24FBBB8F003B448A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8625027C99704EB3744CBE13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				963F21D2DBDC2E4D3CF11275 /* Pods_KHL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55C8433524FBBB8F003B448A /* Build configuration list for PBXNativeTarget "KHL" */;
 			buildPhases = (
+				8CFB7ED9A05AF11C7179CCDC /* [CP] Check Pods Manifest.lock */,
 				55C8431D24FBBB8B003B448A /* Sources */,
 				55C8431E24FBBB8B003B448A /* Frameworks */,
 				55C8431F24FBBB8B003B448A /* Resources */,
+				A9BDEE61A8D0BD313B0972CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,32 +219,80 @@
 			files = (
 				55C8433124FBBB8F003B448A /* LaunchScreen.storyboard in Resources */,
 				55C8432E24FBBB8F003B448A /* Assets.xcassets in Resources */,
-				55C8432C24FBBB8B003B448A /* Main.storyboard in Resources */,
+				55C8432C24FBBB8B003B448A /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CFB7ED9A05AF11C7179CCDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KHL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9BDEE61A8D0BD313B0972CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KHL/Pods-KHL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KHL/Pods-KHL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KHL/Pods-KHL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55C8431D24FBBB8B003B448A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C8432924FBBB8B003B448A /* ViewController.swift in Sources */,
+				55AA368724FBD49500B88670 /* NetworkManager.swift in Sources */,
+				55C8432924FBBB8B003B448A /* LoginViewController.swift in Sources */,
+				55C8433C24FBCD26003B448A /* TeamsViewController.swift in Sources */,
 				55C8432524FBBB8B003B448A /* AppDelegate.swift in Sources */,
+				55AA369224FCDFD500B88670 /* TeamDetail.swift in Sources */,
+				55AA368524FBD3B200B88670 /* Team.swift in Sources */,
 				55C8432724FBBB8B003B448A /* SceneDelegate.swift in Sources */,
+				55AA368E24FBDD8F00B88670 /* TeamCollectionViewCell.swift in Sources */,
+				55AA369024FCD9EC00B88670 /* Extension + TeamsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55C8432A24FBBB8B003B448A /* Main.storyboard */ = {
+		55C8432A24FBBB8B003B448A /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				55C8432B24FBBB8B003B448A /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		55C8432F24FBBB8F003B448A /* LaunchScreen.storyboard */ = {
@@ -282,6 +422,7 @@
 		};
 		55C8433624FBBB8F003B448A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9266D97E2169005EC08159DC /* Pods-KHL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +441,7 @@
 		};
 		55C8433724FBBB8F003B448A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2CADD25191B8841F9D7A2AB /* Pods-KHL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
