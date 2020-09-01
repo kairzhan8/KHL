@@ -13,11 +13,11 @@ struct Team: Codable {
     
     enum CodingKeys: String, CodingKey {
         case teamDetails = "team"
-        
     }
 }
 
 struct TeamDetails: Codable {
+    let id: Int?
     let name: String?
     let location: String?
     let image: String?

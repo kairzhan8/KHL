@@ -12,8 +12,7 @@ import Alamofire
 class TeamsViewController: UICollectionViewController {
     
     var teams: [Team] = []
-    let jsonUrl = "https://khl.api.webcaster.pro/api/khl_mobile/teams_v2.json"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +25,6 @@ class TeamsViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return teams.count
     }
 
@@ -34,17 +32,13 @@ class TeamsViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "team", for: indexPath) as! TeamCollectionViewCell
         
         let team = teams[indexPath.item]
-        print("team", team)
         cell.configure(with: team)
-        
-        
-        // Configure the cell
     
         return cell
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let teamDetailVC = segue.destination as! TeamDetail
+        let teamDetailVC = segue.destination as! TeamDetailsViewController
         let cell = sender as! UICollectionViewCell
         let indexPath = collectionView.indexPath(for: cell)
         teamDetailVC.team = teams[indexPath!.row]
