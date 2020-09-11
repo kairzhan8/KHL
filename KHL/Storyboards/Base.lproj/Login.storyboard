@@ -45,7 +45,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="8yr-NC-rt3" kind="show" id="u8x-nT-SvH"/>
+                                            <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="yCI-v6-uD8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -59,6 +59,9 @@
                                         <state key="normal" title="Забыли логин?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotUsername" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Cl-Lh-l7P"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf6-hX-bu8">
                                         <rect key="frame" x="159" y="0.0" width="95" height="27"/>
@@ -66,6 +69,9 @@
                                         <state key="normal" title="Забыли пароль?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5S-H8-Z6i"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -81,6 +87,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="Oq2-Zp-ja3" id="ssW-W3-hFY"/>
+                        <outlet property="username" destination="4cO-Nj-iW7" id="8k8-6D-fIn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +101,7 @@
             <objects>
                 <collectionViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="uHA-1E-Zw1" customClass="TeamsViewController" customModule="KHL" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Xs0-Jg-TOI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KZT-L2-Red">
@@ -146,7 +156,21 @@
                             <outlet property="delegate" destination="uHA-1E-Zw1" id="Kue-KZ-ZMP"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Команды КХЛ" id="lKO-ao-yvN"/>
+                    <navigationItem key="navigationItem" title="Команды КХЛ" id="kR8-3A-pJN">
+                        <barButtonItem key="leftBarButtonItem" image="x.circle.fill" catalog="system" style="plain" id="luM-Iv-SZy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RrU-MP-T9u">
+                                <rect key="frame" x="20" y="11" width="74" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="arrowshape.turn.up.left.2" catalog="system"/>
+                                <connections>
+                                    <action selector="back" destination="uHA-1E-Zw1" eventType="touchUpInside" id="Awh-Rb-hqo"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="back:" destination="uHA-1E-Zw1" id="WRw-w5-qRX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bec-0D-2i0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +181,7 @@
             <objects>
                 <tableViewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="iKU-3c-cln" customClass="TeamDetailsViewController" customModule="KHL" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Vr2-Pt-0mE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="dzx-zV-8Pa">
@@ -286,24 +310,24 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Wg9-yT-gM9" customClass="PlayerDetails" customModule="KHL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LK1-Rj-gHA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hqX-fU-8g6">
-                                <rect key="frame" x="87" y="86" width="240" height="187"/>
+                                <rect key="frame" x="87" y="118" width="240" height="187"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="k1y-Lk-kk5"/>
                                     <constraint firstAttribute="height" constant="187" id="oxW-uJ-vyz"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-80-g2H">
-                                <rect key="frame" x="182" y="293" width="50.5" height="24"/>
+                                <rect key="frame" x="182" y="325" width="50.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Eat-a3-S9U">
-                                <rect key="frame" x="20" y="337" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="369" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Играет в команде" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2A-hP-5qx">
                                         <rect key="frame" x="0.0" y="0.0" width="143.5" height="20.5"/>
@@ -320,7 +344,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="0GH-Np-TdY">
-                                <rect key="frame" x="20" y="367.5" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="399.5" width="374" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Под номером" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U71-vF-yE8">
                                         <rect key="frame" x="0.0" y="0.0" width="110.5" height="20.5"/>
@@ -372,7 +396,7 @@
         <!--Navigation Controller-->
         <scene sceneID="bam-cK-fHU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="8yr-NC-rt3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="nav" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="8yr-NC-rt3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="DLj-cr-bIy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JUJ-a4-SFS">
@@ -389,4 +413,8 @@
             <point key="canvasLocation" x="790" y="106"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.2" catalog="system" width="128" height="87"/>
+        <image name="x.circle.fill" catalog="system" width="128" height="121"/>
+    </resources>
 </document>

@@ -22,6 +22,11 @@ class TeamsViewController: UICollectionViewController {
         }
     }
 
+    @IBAction func back() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
