@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		552DCC68250B4E5300C08003 /* Extension + LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DCC67250B4E5300C08003 /* Extension + LoginVC.swift */; };
+		552DCC6A250CC81F00C08003 /* TeamsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552DCC69250CC81F00C08003 /* TeamsImageView.swift */; };
 		55AA368524FBD3B200B88670 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368424FBD3B200B88670 /* Team.swift */; };
 		55AA368724FBD49500B88670 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368624FBD49500B88670 /* NetworkManager.swift */; };
 		55AA368E24FBDD8F00B88670 /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA368D24FBDD8F00B88670 /* TeamCollectionViewCell.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		552DCC67250B4E5300C08003 /* Extension + LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + LoginVC.swift"; sourceTree = "<group>"; };
+		552DCC69250CC81F00C08003 /* TeamsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsImageView.swift; sourceTree = "<group>"; };
 		55AA368424FBD3B200B88670 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		55AA368624FBD49500B88670 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		55AA368D24FBDD8F00B88670 /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				55AA368D24FBDD8F00B88670 /* TeamCollectionViewCell.swift */,
 				55AA369B24FD04D800B88670 /* PlayerTableViewCell.swift */,
+				552DCC69250CC81F00C08003 /* TeamsImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				55C8432724FBBB8B003B448A /* SceneDelegate.swift in Sources */,
 				55AA369E24FD235C00B88670 /* PlayerDetails.swift in Sources */,
 				55AA368E24FBDD8F00B88670 /* TeamCollectionViewCell.swift in Sources */,
+				552DCC6A250CC81F00C08003 /* TeamsImageView.swift in Sources */,
 				55AA369C24FD04D800B88670 /* PlayerTableViewCell.swift in Sources */,
 				55AA369424FCE84000B88670 /* Player.swift in Sources */,
 				55AA369A24FD000800B88670 /* TeamDetailsViewController.swift in Sources */,
